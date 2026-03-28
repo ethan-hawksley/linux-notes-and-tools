@@ -1,0 +1,9 @@
+{
+  "vimMode": true,
+  "spellcheck": false,
+  "attachmentFolderPath": "assets",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "showLineNumber": true,
+  "strictLineBreaks": true
+}
