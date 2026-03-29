@@ -1,4 +1,5 @@
 [
   "scrolling",
-  "vim-yank-highlight"
+  "vim-yank-highlight",
+  "obsidian-vimrc-support"
 ]
