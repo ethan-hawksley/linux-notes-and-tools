@@ -2,13 +2,13 @@
 
 ## Month 1
 - [x] **Linux:** Start Linux Course - Begin Mastering Linux course
-- [ ] **Linux:** Daily Practice - 1–2 hrs hands-on practice
-- [ ] **Linux:** File Systems - Permissions, navigation
+- [x] **Linux:** Daily Practice - 1–2 hrs hands-on practice
+- [x] **Linux:** File Systems - Permissions, navigation
 - [ ] **Linux:** Processes - ps, top, monitoring
 - [ ] **Linux:** Networking - SSH, ports, curl
 - [ ] **Linux:** Bash Scripting - Basic scripts
 - [x] **Project:** GitHub Repo - linux-notes-and-tools
-- [ ] **Labs:** TryHackMe - Beginner labs
+- [x] **Labs:** TryHackMe - Beginner labs
 
 ## Month 2
 - [ ] **Linux:** Continue Course - Complete modules
