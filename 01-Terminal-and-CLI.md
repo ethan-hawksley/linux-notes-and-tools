@@ -369,5 +369,29 @@ Outputs Public.
 echo \*e\*
 Outputs all files and directories containing e.
 
-~ is expanded by bash to the home directory.
-This is different to $HOME, which is a variable with the contents being the home directory.
+~ is expanded by bash to the value of the $HOME environment variable.
+
+### 24/04/2026
+~+ expands to $PWD value.
+$PWD is preferred in practice as it is more readable.
+
+Bash does word splitting based on spaces.
+By using double quotes "" or single quotes '', the splitting is prevented.
+
+### 25/04/2026
+echo $HOME
+echo ${HOME}
+echo "$HOME"
+echo "${HOME}"
+All of the above function, but "${HOME}" is the clearest and prevents word splitting.
+
+echo ${#PATH}
+Outputs length of variable in bytes, unicode characters count as multiple.
+
+${VARIABLE:start:length}
+echo ${PATH:0:4}
+Outputs /hom, extracting the substring.
+
+${VARIABLE/pattern/replacement}
+${VARIABLE//pattern/replacement}
+Performs find and replace. / does it once, // does it multiple times.
