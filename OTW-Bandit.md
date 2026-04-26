@@ -182,3 +182,171 @@ dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
 vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=  
 -----END RSA PRIVATE KEY-----
 ```
+
+### Level 17
+ls
+cat passwords.old
+cat passwords.new
+diff passwords.old passwords.new
+Password: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+### Level 18
+ssh -T -p 2220 bandit18@bandit.labs.overthewire.org
+ls
+cat readme
+Password: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+### Level 19
+./bandit20-do
+./bandit20-do whoami
+./bandit20-do ls /etc/bandit_pass
+./bandit20-do cat /etc/bandit_pass/bandit20
+Password: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+### Level 20
+nc -l 5000
+Ctrl+Z
+./suconnect 5000
+Ctrl+Z
+fg 1
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+Ctrl+Z
+fg 2
+Ctrl+Z
+fg 1
+Password: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+### Level 21
+ls /etc/cron.d
+cat /etc/cron.d/*
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Password: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+### Level 22
+ls /etc/cron.d
+cat /etc/cron.d/*
+cat /usr/bin/cronjob_bandit22.sh
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+Password: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+
+### Level 23
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+vi /var/spool/bandit24/foo/runme.sh
+	cat /etc/bandit_pass/bandit24 > /tmp/tempoutputfile
+cat /tmp/tempoutputfile
+Password: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+
+### Level 24
+printf "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 %s\n" {0000..9999}  
+| nc localhost 30002
+Password: iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+
+### Level 25
+ls
+cat bandit26.sshkey
+Password:
+```
+-----BEGIN RSA PRIVATE KEY-----  
+MIIEpQIBAAKCAQEApis2AuoooEqeYWamtwX2k5z9uU1Afl2F8VyXQqbv/LTrIwdW  
+pTfaeRHXzr0Y0a5Oe3GB/+W2+PReif+bPZlzTY1XFwpk+DiHk1kmL0moEW8HJuT9  
+/5XbnpjSzn0eEAfFax2OcopjrzVqdBJQerkj0puv3UXY07AskgkyD5XepwGAlJOG  
+xZsMq1oZqQ0W29aBtfykuGie2bxroRjuAPrYM4o3MMmtlNE5fC4G9Ihq0eq73MDi  
+1ze6d2jIGce873qxn308BA2qhRPJNEbnPev5gI+5tU+UxebW8KLbk0EhoXB953Ix  
+3lgOIrT9Y6skRjsMSFmC6WN/O7ovu8QzGqxdywIDAQABAoIBAAaXoETtVT9GtpHW  
+qLaKHgYtLEO1tOFOhInWyolyZgL4inuRRva3CIvVEWK6TcnDyIlNL4MfcerehwGi  
+il4fQFvLR7E6UFcopvhJiSJHIcvPQ9FfNFR3dYcNOQ/IFvE73bEqMwSISPwiel6w  
+e1DjF3C7jHaS1s9PJfWFN982aublL/yLbJP+ou3ifdljS7QzjWZA8NRiMwmBGPIh  
+Yq8weR3jIVQl3ndEYxO7Cr/wXXebZwlP6CPZb67rBy0jg+366mxQbDZIwZYEaUME  
+zY5izFclr/kKj4s7NTRkC76Yx+rTNP5+BX+JT+rgz5aoQq8ghMw43NYwxjXym/MX  
+c8X8g0ECgYEA1crBUAR1gSkM+5mGjjoFLJKrFP+IhUHFh25qGI4Dcxxh1f3M53le  
+wF1rkp5SJnHRFm9IW3gM1JoF0PQxI5aXHRGHphwPeKnsQ/xQBRWCeYpqTme9amJV  
+tD3aDHkpIhYxkNxqol5gDCAt6tdFSxqPaNfdfsfaAOXiKGrQESUjIBcCgYEAxvmI  
+2ROJsBXaiM4Iyg9hUpjZIn8TW2UlH76pojFG6/KBd1NcnW3fu0ZUU790wAu7QbbU  
+i7pieeqCqSYcZsmkhnOvbdx54A6NNCR2btc+si6pDOe1jdsGdXISDRHFb9QxjZCj  
+6xzWMNvb5n1yUb9w9nfN1PZzATfUsOV+Fy8CbG0CgYEAifkTLwfhqZyLk2huTSWm  
+pzB0ltWfDpj22MNqVzR3h3d+sHLeJVjPzIe9396rF8KGdNsWsGlWpnJMZKDjgZsz  
+JQBmMc6UMYRARVP1dIKANN4eY0FSHfEebHcqXLho0mXOUTXe37DWfZza5V9Oify3  
+JquBd8uUptW1Ue41H4t/ErsCgYEArc5FYtF1QXIlfcDz3oUGz16itUZpgzlb71nd  
+1cbTm8EupCwWR5I1j+IEQU+JTUQyI1nwWcnKwZI+5kBbKNJUu/mLsRyY/UXYxEZh  
+ibrNklm94373kV1US/0DlZUDcQba7jz9Yp/C3dT/RlwoIw5mP3UxQCizFspNKOSe  
+euPeaxUCgYEAntklXwBbokgdDup/u/3ms5Lb/bm22zDOCg2HrlWQCqKEkWkAO6R5  
+/Wwyqhp/wTl8VXjxWo+W+DmewGdPHGQQ5fFdqgpuQpGUq24YZS8m66v5ANBwd76t  
+IZdtF5HXs2S5CADTwniUS5mX1HO9l5gUkk+h0cH5JnPtsMCnAUM+BRY=  
+-----END RSA PRIVATE KEY-----
+```
+### Level 26
+SSH with small terminal.
+v to enter vi.
+:shell=/bin/sh
+:!sh
+bash
+ls
+./bandit27-do
+./bandit27-do cat /etc/bandit_pass/bandit27
+Password: upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+
+### Level 27
+git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
+cd repo
+ls
+cat README
+Password: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
+
+### Level 28
+git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo
+cd repo
+ls
+cat README.md
+git log
+git checkout a1487fd098591dfa210ede70ba60f7093f47d20d
+cat README.md
+Password: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7 
+
+### Level 29
+git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo
+cd repo
+ls
+cat README.md
+git log
+git branch -a
+git switch dev
+cat README.md
+Password: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+
+### Level 30
+git clone ssh://bandit30-git@bandit.labs.overthewire.org:2220/home/bandit30-git/repo
+cd repo
+ls
+cat README.md
+git log
+git branch -a
+git tag
+git checkout secret
+git show secret
+Password: fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+
+### Level 31
+git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+cd repo
+ls
+cat README.md
+echo 'May I come in?' > key.txt
+rm .gitignore
+git add .
+git commit -m "feat: add file"
+git push
+Password: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+
+### Level 32
+$0
+bash
+cat /etc/bandit_pass/bandit33
+Password: tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+
+### Level 33
+ls
+cat README.txt
+Password: Wargame completed!
