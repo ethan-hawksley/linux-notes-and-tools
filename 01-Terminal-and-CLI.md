@@ -395,3 +395,39 @@ Outputs /hom, extracting the substring.
 ${VARIABLE/pattern/replacement}
 ${VARIABLE//pattern/replacement}
 Performs find and replace. / does it once, // does it multiple times.
+
+echo 'hello'"world"
+Outputs helloworld, it is entirely valid. Quotes are stripped and the whole thing is outputted.
+
+test=cat
+$test --help
+Outputs the help text for cat.
+
+mkdir test && cd $_
+touch echo
+*
+Outputs a newline, as the echo program was run.
+
+echo data.{txt,csv}
+Outputs data.txt data.csv
+Brace expansion automatically generates words for each combination.
+echo {a..z}
+Outputs the alphabet.
+echo {18..26}
+Outputs all numbers between 18 and 26 inclusive.
+echo {26..18}
+Outputs all numbers between 18 and 26 inclusive in reverse.
+
+echo "The directory is $(pwd)"
+Executes the command inside $().
+Should be in double quotes to avoid word splitting.
+
+diff <(ls directory1) <(ls directory2)
+Outputs the diff of the two directories
+<(command) creates a temporary pipe that can be used as a file.
+
+wc -l < <(ls)
+This works too, the files can be redirected to stdin, though in most cases using | is clearer.
+
+echo test > >(cat)
+Outputs test. echo outputs test, which is redirected to the temporary file, and cat reads the data as stdin.
