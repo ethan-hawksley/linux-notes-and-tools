@@ -6,7 +6,7 @@
 - [x] **Linux:** File Systems - Permissions, navigation
 - [ ] **Linux:** Processes - ps, top, monitoring
 - [ ] **Linux:** Networking - SSH, ports, curl
-- [ ] **Linux:** Bash Scripting - Basic scripts
+- [x] **Linux:** Bash Scripting - Basic scripts
 - [x] **Project:** GitHub Repo - linux-notes-and-tools
 - [x] **Labs:** TryHackMe - Beginner labs
 
